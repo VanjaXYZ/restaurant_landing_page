@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -13,7 +15,7 @@ header {
   height: 4.2rem;
   display: flex;
   align-items: center;
-  background-color: rgb(229, 227, 225);
+  background-color: #000;
   padding: 1rem;
 }
 
@@ -29,4 +31,124 @@ section {
 
 section:nth-child(2n) {
   background-color: rgb(208, 229, 246);
+}
+
+/* TITLE + LOGO */
+.title {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.title__name {
+  font-size: 2.6rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* MENU + HAMBURGER */
+
+.menu {
+  width: 40rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+  transition: 0.3s;
+}
+.menu a:hover::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+
+.menu__hamburger {
+  width: 3rem;
+  height: 3rem;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s;
+  display: none;
+}
+
+.hamburger_line_one {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+}
+
+.hamburger_line_two {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+}
+
+.hamburger_line_three {
+  width: 2.5rem;
+  height: 0.3rem;
+  background-color: #fff;
+  position: absolute;
+  top: 62%;
+  left: 8%;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1220px) {
+  .title__name {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1076px) {
+  .title__name {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .menu a {
+    display: none;
+  }
+
+  .menu__hamburger {
+    display: block;
+  }
 }

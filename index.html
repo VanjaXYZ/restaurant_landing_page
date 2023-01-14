@@ -11,28 +11,39 @@
     <div class="container">
       <header>
         <div class="title">
-          <span class="title__logo">LOGO</span>
+          <span class="title__logo"
+            ><img src="/img/logo.png" alt="logo" class="logo"
+          /></span>
           <span class="title__name">Misty's Glamour</span>
         </div>
         <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Gallery</a>
-          <a href="#">Contact</a>
+          <!-- HAMBURGER MENU -->
+          <div class="menu__hamburger">
+            <span class="hamburger_line_one"></span>
+            <span class="hamburger_line_two"></span>
+            <span class="hamburger_line_three"></span>
+          </div>
+          <!-- ************** -->
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
         </div>
       </header>
 
       <main>
-        <section class="section__hero">HERO</section>
-        <section class="section__about">
+        <section class="section__hero" id="home">HERO</section>
+        <section class="section__about" id="about">
           <h2>About</h2>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
           magnam aut porro rem in voluptates iste temporibus dignissimos soluta
           numquam possimus ducimus excepturi voluptatibus culpa amet repellendus
           quasi molestias earum veniam placeat, quidem cum similique.
         </section>
-        <section class="section__gallery"><h2>GALLERY</h2></section>
-        <section class="section__contact">
+        <section class="section__gallery" id="gallery">
+          <h2>GALLERY</h2>
+        </section>
+        <section class="section__contact" id="contact">
           <h2>CONTACT</h2>
           <form>
             <label for="name">name</label>
