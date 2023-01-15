@@ -83,12 +83,7 @@ section:nth-child(2n) {
   transition: 0.3s;
 }
 .menu a:hover::before {
-  content: "";
-  position: absolute;
-  background-color: #fff;
   width: 100%;
-  height: 2px;
-  bottom: 0;
   left: 0;
 }
 
@@ -129,6 +124,30 @@ section:nth-child(2n) {
   left: 8%;
 }
 
+/* HERO */
+
+.section__hero {
+  padding: 0;
+  height: fit-content;
+}
+.section__hero img {
+  width: 100vw;
+  height: auto;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  
+}
+
+
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 1220px) {
@@ -152,3 +171,4 @@ section:nth-child(2n) {
     display: block;
   }
 }
+
