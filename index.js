@@ -59,3 +59,9 @@ window.addEventListener('resize', () => {
           size = carouselImages[0].clientWidth;
           carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
+
+/* TODO: 
+- add a textbox to the carousel. this should slide along with the image too.
+- add dot indicators / arrows 
+- timer transition
+*/
