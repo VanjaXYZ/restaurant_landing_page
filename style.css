@@ -27,9 +27,8 @@ body {
 
 h1 {
   font-family: var(--ff-heading);
-  font-size: 7rem;
-  line-height: 1.2;
 }
+
 .container {
   width: 100%;
 }
@@ -55,14 +54,20 @@ section {
 
 .section__hero {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   column-gap: 4rem;
-  padding: 0rem 6rem;
+  padding: 2rem 3rem 5rem 3rem;
   height: calc(100vh - 4.2rem);
+}
+
+.section__hero__text h1 {
+  font-size: 8rem;
+  line-height: 1.2;
 }
 
 .section__hero__text {
   text-align: right;
+  align-self: center;
 }
 
 .section__hero__text em {
