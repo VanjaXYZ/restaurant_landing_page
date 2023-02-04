@@ -215,6 +215,39 @@ section {
   color: var(--clr-neutral);
 }
 
+.section__contact {
+  display: flex;
+}
+
+.section__contact .contact-left {
+  width: 50%;
+  height: 100%;
+  background-color: var(--clr-neutral-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-left .contact-left-txt {
+  font-family: var(--ff-heading);
+  padding: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 8px solid #fff;
+}
+
+.contact-left span {
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+
+.section__contact .contact-location {
+  width: 50%;
+  height: 100%;
+  background-color: var(--clr-accent-2);
+}
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 1220px) {
