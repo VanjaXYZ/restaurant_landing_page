@@ -160,7 +160,7 @@ section {
 .hamburger_line_one {
   width: 2.5rem;
   height: 0.3rem;
-  background-color: #fff;
+  background-color: var(--clr-dark);
   position: absolute;
   top: 20%;
   left: 8%;
@@ -169,7 +169,7 @@ section {
 .hamburger_line_two {
   width: 2.5rem;
   height: 0.3rem;
-  background-color: #fff;
+  background-color: var(--clr-dark);
   position: absolute;
   top: 40%;
   left: 8%;
@@ -178,7 +178,7 @@ section {
 .hamburger_line_three {
   width: 2.5rem;
   height: 0.3rem;
-  background-color: #fff;
+  background-color: var(--clr-dark);
   position: absolute;
   top: 62%;
   left: 8%;
@@ -200,10 +200,9 @@ section {
   flex: 1 1 auto;
 }
 
-
 .section__hero__text {
   min-width: 0; 
-  text-align: left;
+  text-align: center;
   flex: 1 1 auto;
   align-self: center;
 }
@@ -404,7 +403,7 @@ section {
 .contact-location {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -416,9 +415,6 @@ section {
   flex-direction: column;
 }
 
-.flow-root > * + * {
-  margin-top: 3rem;
-}
 
 .contact-info h2 {
   color: var(--clr-accent);
