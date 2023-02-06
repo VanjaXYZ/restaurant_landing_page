@@ -12,8 +12,8 @@
   --clr-neutral-2: #fcceb3;
 
   --clr-accent: #b34d3b;
-  --clr-accent-2: #451212;
-  --clr-dark: #292424;
+  --clr-dark: #451212;
+  --clr-darker: #292424;
 
   --ff-base: "Josefin Sans", sans-serif;
   --ff-heading: "Seaweed Script", cursive;
@@ -22,7 +22,7 @@
 body {
   font-family: var(--ff-base);
   background-color: var(--clr-light);
-  color: var(--clr-dark);
+  color: var(--clr-darker);
   position: relative;
 }
 
@@ -35,7 +35,6 @@ h2 {
   letter-spacing: 5px;
   font-weight: 400;
   position: relative;
-  margin-bottom: 2rem;
 }
 
 .container {
@@ -201,6 +200,7 @@ section {
 }
 
 .section__hero__text {
+  color: var(--clr-dark);
   min-width: 0; 
   text-align: center;
   flex: 1 1 auto;
@@ -348,21 +348,26 @@ section {
   width: 45rem;
   max-width: 90%;
   padding: 3rem;
-  background-color: var(--clr-accent-2);
+  background-color: var(--clr-dark);
   border-radius: 0.5rem;
   color: var(--clr-light);
   text-align: center;
   position: relative;
 }
 
-.about-content::before {
-  content: "";
-  position: absolute;
-  width: 310px;
-  height: 3px;
-  top: 50%;
-  right: 27%;
-  background-color: var(--clr-neutral-2);
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: var(--clr-neutral);
+  width: 30%;
+  margin: auto;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+}
+
+.section__menu hr {
+  background-color: var(--clr-accent);
 }
 
 .about-content p {
@@ -431,7 +436,7 @@ section {
 .section__contact .contact-location {
   width: 50%;
   height: 100%;
-  background-color: var(--clr-accent-2);
+  background-color: var(--clr-dark);
 }
 
 .scroll-top {
@@ -464,7 +469,7 @@ footer {
   color: var(--clr-accent);
   font-size: 1.2rem;
   letter-spacing: 2px;
-  padding: 3rem 0;
+  padding: 3rem;
 }
 
 footer a {
